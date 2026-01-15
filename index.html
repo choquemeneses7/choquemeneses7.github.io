@@ -2,45 +2,78 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>VV Apps - Zero Contact</title>
+  <title>VV Apps - Mobile Applications Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; color: #333; background-color: #f4f4f4; }
-    header { background-color: #0056b3; color: white; padding: 40px 20px; text-align: center; }
-    header h1 { margin: 0; font-size: 2.5em; }
-    header p { font-size: 1.2em; margin-top: 10px; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin:0; padding:0; color:#333; background:#f9f9f9; }
+    header { background: #0056b3; color:white; padding:50px 20px; text-align:center; }
+    header h1 { font-size:3em; margin:0; }
+    header p { font-size:1.2em; margin-top:10px; }
 
-    .content { max-width: 900px; margin: 40px auto; padding: 0 20px; background: white; border-radius: 8px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
-    h2 { color: #0056b3; margin-top: 30px; }
-    p { margin-bottom: 20px; line-height: 1.6; }
-    a.button { display: inline-block; padding: 10px 20px; background: #007aff; color: white; border-radius: 5px; text-decoration: none; margin-top: 10px; }
-    a.button:hover { background: #0056b3; }
-    footer { text-align: center; padding: 20px; margin-top: 40px; font-size: 0.9em; color: #777; }
+    nav { background:#007aff; display:flex; justify-content:center; flex-wrap:wrap; padding:10px; }
+    nav a { color:white; text-decoration:none; margin:5px 15px; font-weight:bold; padding:8px 12px; border-radius:5px; transition:0.3s; }
+    nav a:hover { background:#0056b3; }
+
+    .container { max-width:1000px; margin:40px auto; padding:0 20px; }
+    h2 { color:#0056b3; margin-top:30px; }
+    .app-card { background:white; border-radius:8px; box-shadow:0 4px 12px rgba(0,0,0,0.1); padding:20px; margin-bottom:30px; display:flex; align-items:center; flex-wrap:wrap; transition:0.3s; }
+    .app-card:hover { box-shadow:0 6px 16px rgba(0,0,0,0.15); }
+    .app-logo { width:100px; height:100px; border-radius:20px; margin-right:20px; }
+    .app-details { flex:1; min-width:250px; }
+    .app-details h3 { margin:0 0 10px 0; }
+    .app-details p { margin:0 0 10px 0; }
+    .app-details a.button { display:inline-block; background:#007aff; color:white; padding:8px 15px; border-radius:5px; text-decoration:none; }
+    .app-details a.button:hover { background:#0056b3; }
+
+    footer { text-align:center; padding:30px 20px; background:#f4f4f4; font-size:0.9em; color:#555; margin-top:40px; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>VV Apps</h1>
-    <p>Official page of <strong>Zero Contact: Breakup Tracker</strong></p>
-  </header>
 
-  <div class="content">
-    <h2>About the App</h2>
-    <p><strong>Zero Contact</strong> is designed to help users move on after a breakup, track emotions, and build new habits for personal growth. With an intuitive interface and smart notifications, you can manage your emotional health effectively.</p>
+<header>
+  <h1>VV Apps</h1>
+  <p>Explore our portfolio of mobile applications designed for productivity, wellness, and personal growth.</p>
+</header>
 
-    <h2>Privacy & Security</h2>
-    <p>We take your privacy seriously. Our app uses third-party services such as Google AdMob for advertising. No personal information is collected directly by VV Apps. For details, see our <a href="privacy.html">Privacy Policy</a>.</p>
+<nav>
+  <a href="#portfolio">Apps</a>
+  <a href="privacy.html">Privacy Policy</a>
+  <a href="#contact">Contact</a>
+</nav>
 
-    <h2>Contact & Support</h2>
-    <p>Need help or want to give feedback? Reach us at: <a href="mailto:contact@vvapps.dev">contact@vvapps.dev</a></p>
+<div class="container" id="portfolio">
+  <h2>Our Apps</h2>
 
-    <h2>Download</h2>
-    <p>You can download <strong>Zero Contact: Breakup Tracker</strong> directly from the App Store:</p>
-    <a class="button" href="https://apps.apple.com/app/id6757750790" target="_blank">View on App Store</a>
+  <!-- App example: Zero Contact -->
+  <div class="app-card">
+    <img src="https://is4-ssl.mzstatic.com/image/thumb/Purple126/v4/4d/1e/0f/4d1e0f2b-1c70-0b38-1df4-bce44d5c8c97/AppIcon-0-1x_U007emarketing-0-0-85-220-0-7.png/100x100bb.png" alt="Zero Contact" class="app-logo">
+    <div class="app-details">
+      <h3>Zero Contact: Breakup Tracker</h3>
+      <p>Helps users move on after breakups, track emotions, and build positive habits for personal growth.</p>
+      <a href="https://apps.apple.com/us/app/zero-contact-breakup-tracker/id6757750790" class="button" target="_blank">View on App Store</a>
+    </div>
   </div>
 
-  <footer>
-    &copy; 2026 VV Apps. All rights reserved.
-  </footer>
+  <!-- App example: Puedes duplicar este bloque para tus otras apps -->
+  <div class="app-card">
+    <img src="APP_LOGO_URL_HERE" alt="Other App" class="app-logo">
+    <div class="app-details">
+      <h3>Other App Name</h3>
+      <p>Brief description of your app highlighting its key features and benefits.</p>
+      <a href="APP_STORE_LINK_HERE" class="button" target="_blank">View on App Store</a>
+    </div>
+  </div>
+
+</div>
+
+<div class="container" id="contact">
+  <h2>Contact & Support</h2>
+  <p>Questions, suggestions or business inquiries? Reach us at: <a href="mailto:contact@vvapps.dev">contact@vvapps.dev</a></p>
+</div>
+
+<footer>
+  &copy; 2026 VV Apps. All rights reserved.
+</footer>
+
 </body>
 </html>
